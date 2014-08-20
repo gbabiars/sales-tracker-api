@@ -1,3 +1,5 @@
+var moment = require('moment');
+
 var PRODUCTS = [
     {
         name: 'Apple iPhone 5',
@@ -17,23 +19,23 @@ var SALES = [
     {
         volume: 1000,
         price: 50000,
-        date: new Date()
+        date: moment().startOf('day').toDate()
     },
     {
         volume: 200,
         price: 8000,
-        date: new Date()
+        date: moment().startOf('day').toDate()
     },
     {
         id: 3,
         volume: 200,
         price: 10000,
-        date: new Date()
+        date: moment().startOf('day').toDate()
     },
     {
         volume: 2,
         price: 500,
-        date: new Date()
+        date: moment().startOf('day').toDate()
     }
 ];
 
